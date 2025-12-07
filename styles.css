@@ -1,0 +1,113 @@
+/* Fondo general */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffd6e7; /* Rosa suave */
+    margin: 0;
+    padding: 0;
+}
+
+/* ENCABEZADO */
+header {
+    background-color: #ff8ab8;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+/* MENÚ FIJO */
+nav {
+    background-color: #ff5fa2;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 8px 12px;
+}
+
+nav ul li a:hover {
+    background-color: white;
+    color: #ff4d94;
+    border-radius: 5px;
+}
+
+/* SECCIONES */
+main {
+    padding: 100px 20px 20px; /* Para que no tape el menú */
+}
+
+section {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: #ff4d94;
+    font-size: 24px;
+}
+
+/* LISTAS */
+ul, ol {
+    padding-left: 20px;
+}
+
+/* GALERÍA */
+.galeria {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.galeria img {
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 3px solid #ff8ab8;
+}
+
+/* VIDEO */
+.video-container {
+    text-align: center;
+}
+
+video {
+    border-radius: 12px;
+    border: 3px solid #ff8ab8;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #ff8ab8;
+    color: white;
+    margin-top: 20px;
+}
