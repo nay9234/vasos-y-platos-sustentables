@@ -1,32 +1,22 @@
-/* Fondo general */
+/* ----- Estilos Globales ----- */
 body {
     font-family: 'Arial', sans-serif;
     background-color: #ffd6e7; /* Rosa suave */
     margin: 0;
     padding: 0;
+    color: #333;
+    line-height: 1.6;
 }
 
-/* ENCABEZADO */
-header {
-    background-color: #ff8ab8;
-    padding: 20px;
-    text-align: center;
-    color: white;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 28px;
-}
-
-/* MENÚ FIJO */
+/* Menú Fijo (nav) */
 nav {
     background-color: #ff5fa2;
-    padding: 10px;
+    padding: 12px 0;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
 }
 
 nav ul {
@@ -38,14 +28,15 @@ nav ul {
 
 nav ul li {
     display: inline-block;
-    margin: 0 10px;
+    margin: 0 12px;
 }
 
 nav ul li a {
     color: white;
     font-weight: bold;
     text-decoration: none;
-    padding: 8px 12px;
+    padding: 8px 14px;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 nav ul li a:hover {
@@ -54,30 +45,53 @@ nav ul li a:hover {
     border-radius: 5px;
 }
 
-/* SECCIONES */
-main {
-    padding: 100px 20px 20px; /* Para que no tape el menú */
+/* Encabezado (header) */
+header {
+    background-color: #ff8ab8;
+    padding: 30px 20px;
+    text-align: center;
+    color: white;
+    margin-top: 70px; /* <- este margen baja el header debajo del menú */
+    border-bottom: 3px solid #ff5fa2;
 }
 
+header h1 {
+    margin: 0;
+    font-size: 36px;
+    letter-spacing: 1px;
+}
+
+/* Área principal */
+main {
+    padding: 20px;
+}
+
+/* Secciones */
 section {
     background: white;
-    padding: 20px;
-    margin-bottom: 20px;
+    padding: 25px;
+    margin-bottom: 25px;
     border-radius: 12px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 h2 {
     color: #ff4d94;
-    font-size: 24px;
+    font-size: 26px;
+    margin-top: 0;
 }
 
-/* LISTAS */
-ul, ol {
-    padding-left: 20px;
+/* Imágenes en secciones */
+.img-section {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 15px auto;
+    border-radius: 8px;
+    border: 3px solid #ff8ab8;
 }
 
-/* GALERÍA */
+/* Galería */
 .galeria {
     display: flex;
     gap: 15px;
@@ -93,21 +107,24 @@ ul, ol {
     border: 3px solid #ff8ab8;
 }
 
-/* VIDEO */
+/* Video */
 .video-container {
     text-align: center;
+    margin-top: 15px;
 }
 
 video {
     border-radius: 12px;
     border: 3px solid #ff8ab8;
+    max-width: 100%;
 }
 
-/* FOOTER */
+/* Pie de página (footer) */
 footer {
     text-align: center;
-    padding: 10px;
+    padding: 15px;
     background-color: #ff8ab8;
     color: white;
     margin-top: 20px;
+    border-top: 3px solid #ff5fa2;
 }
